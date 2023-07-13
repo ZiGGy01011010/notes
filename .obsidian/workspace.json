@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Python.md",
+                "file": "Python/Getting started with Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 277.5
   },
   "right": {
     "id": "2ddfa283ab33d5da",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Python.md",
+                "file": "Python/Getting started with Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Python.md",
+                "file": "Python/Getting started with Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Python.md"
+                "file": "Python/Getting started with Python.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "47ea947e0f50d1df",
   "lastOpenFiles": [
-    "Python/Transform example.md",
     "Python/Python.md",
+    "Python/Getting started with Python.md",
+    "Python/Transform example.md",
     "README.md",
     "Data Engineering/Getting Started With Data Engineering.md",
     "SQL/Indexes.md",

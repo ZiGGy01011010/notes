@@ -1,9 +1,9 @@
 ![](https://www.youtube.com/watch?v=LzYNWme1W6Q)
 
 ## Basics
-**Python** is a [high-level](https://en.wikipedia.org/wiki/High-level_programming_language "High-level programming language"), [general-purpose programming language](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language"), [dynamically typed](https://en.wikipedia.org/wiki/Type_system#DYNAMIC "Type system") and [garbage-collected](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)").
+**[Python](https://www.python.org/)** is a [high-level](https://en.wikipedia.org/wiki/High-level_programming_language "High-level programming language"), [general-purpose programming language](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language"), [dynamically typed](https://en.wikipedia.org/wiki/Type_system#DYNAMIC "Type system") and [garbage-collected](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)").
 
-**Python's [statements](https://en.wikipedia.org/wiki/Statement_(computer_science) "Statement (computer science)") include:**
+**Python's statements include:**
 
 - ```if elif else```
 - ```for```
@@ -28,6 +28,8 @@
 - `**` operator for exponentiation
 - `==` compares by value
 - `and`, `or`, `not` - **boolean** operators
+- `#` comment
+- """Multi line comments"""
 - [Anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function "Anonymous function") are implemented using [lambda expressions](https://en.wikipedia.org/wiki/Lambda_(programming) "Lambda (programming)"); however, there may be only one expression in each body.
 - Conditional expressions are written as `x if c else y`
 - **Lists** are written as `[1, 2, 3]`
