@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Getting started with Python.md",
+                "file": "Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 231.5
   },
   "right": {
     "id": "2ddfa283ab33d5da",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Getting started with Python.md",
+                "file": "Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Getting started with Python.md",
+                "file": "Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Getting started with Python.md"
+                "file": "Python/Python.md"
               }
             }
           }
@@ -148,15 +148,17 @@
   },
   "active": "47ea947e0f50d1df",
   "lastOpenFiles": [
+    "Python/Extract example.md",
     "Python/Python.md",
     "Python/Getting started with Python.md",
+    "Python/Sets.md",
+    "Python/Lists.md",
     "Python/Transform example.md",
+    "Python/Load to DB example.md",
     "README.md",
     "Data Engineering/Getting Started With Data Engineering.md",
     "SQL/Indexes.md",
     "SQL/SQL.md",
-    "Python/Load to DB example.md",
-    "Python/Extract example.md",
     "Docker/Docker.md",
     "Data pipelines/Data pipeline.md",
     "Data Engineering/Road map.md",

@@ -7,14 +7,29 @@
 
 - ```if elif else```
 - ```for```
+```python
+for item in items:
+	print(item)
+```
+Loop through dictionary:
+```python
+for key, value in person.items():
+	print(f"{key}, {value}")
+```
 - ```while```
+```python
+i = 0
+while i < 10:
+	print(i)
+	i += 1
+```
+- The `break` statement, which exits a loop
+- The `continue` statement, which skips the rest of the current iteration and continues with the next
 - ```try```
 - The `raise` statement, used to raise a specified exception or re-raise a caught exception
 - The `class` statement, which executes a block of code and attaches its local namespace to a [class](https://en.wikipedia.org/wiki/Class_(computer_science) "Class (computer science)"), for use in object-oriented programming
 - The `def` statement, which defines a [function](https://en.wikipedia.org/wiki/Function_(computing) "Function (computing)") or [method](https://en.wikipedia.org/wiki/Method_(computing) "Method (computing)")
 - ```with``` frees resources  after exiting block of code
-- The [break](https://en.wikipedia.org/wiki/Break_statement) statement, which exits a loop
-- The `continue` statement, which skips the rest of the current iteration and continues with the next
 - The `del` statement, which removes a variable—deleting the reference from the name to the value, and producing an error if the variable is referred to before it is redefined
 - The `pass` statement, serving as a [NOP](https://en.wikipedia.org/wiki/NOP_(code) "NOP (code)"), syntactically needed to create an empty code block
 - The [assert](https://en.wikipedia.org/wiki/Assertion_(programming) "Assertion (programming)") statement, used in debugging to check for conditions that should apply
@@ -34,6 +49,7 @@
 - Conditional expressions are written as `x if c else y`
 - **Lists** are written as `[1, 2, 3]`
 - **Tuples**, written as `(1, 2, 3)`
+- **Dictionaries** are key-value pairs like: `{'key1': 1.0, 'key2': False, 2: 'text'}`
 
 **Types**
 
@@ -43,7 +59,7 @@
 |`bytearray`|mutable|Sequence of [bytes](https://en.wikipedia.org/wiki/Byte "Byte")|`bytearray(b'Some ASCII')`  <br>`bytearray(b"Some ASCII")`  <br>`bytearray([119, 105, 107, 105])`|
 |`bytes`|immutable|Sequence of bytes|`b'Some ASCII'`  <br>`b"Some ASCII"`  <br>`bytes([119, 105, 107, 105])`|
 |`complex`|immutable|[Complex number](https://en.wikipedia.org/wiki/Complex_number "Complex number") with real and imaginary parts|`3+2.7j`  <br>`3 + 2.7j`|
-|`dict`|mutable|[Associative array](https://en.wikipedia.org/wiki/Associative_array "Associative array") (or dictionary) of key and value pairs; can contain mixed types (keys and values), keys must be a hashable type|`{'key1': 1.0, 3: False`}  <br>`{`}|
+|`dict`|mutable|[Associative array](https://en.wikipedia.org/wiki/Associative_array "Associative array") (or dictionary) of key and value pairs; can contain mixed types (keys and values), keys must be a hashable type|`{'key1': 1.0, 3: False}`  <br>`{}`|
 |`types.EllipsisType`|immutable|An [ellipsis](https://en.wikipedia.org/wiki/Ellipsis_(programming_operator) "Ellipsis (programming operator)") placeholder to be used as an index in [NumPy](https://en.wikipedia.org/wiki/NumPy "NumPy") arrays|`...`  <br>`Ellipsis`|
 |`float`|immutable|[Double-precision](https://en.wikipedia.org/wiki/Double-precision_floating-point_format "Double-precision floating-point format") [floating-point number](https://en.wikipedia.org/wiki/Floating-point_arithmetic "Floating-point arithmetic"). The precision is machine-dependent but in practice is generally implemented as a 64-bit [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754 "IEEE 754") number with 53 bits of precision.[[105]](https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-105)|`1.33333`|
 |`frozenset`|immutable|Unordered [set](https://en.wikipedia.org/wiki/Set_(computer_science) "Set (computer science)"), contains no duplicates; can contain mixed types, if hashable|`frozenset([4.0, 'string', True])`|
@@ -52,6 +68,32 @@
 |`types.NoneType`|immutable|An object representing the absence of a value, often called [null](https://en.wikipedia.org/wiki/Null_pointer "Null pointer") in other languages|`None`|
 |`types.NotImplementedType`|immutable|A placeholder that can be returned from [overloaded operators](https://en.wikipedia.org/wiki/Operator_overloading "Operator overloading") to indicate unsupported operand types.|`NotImplemented`|
 |`range`|immutable|An _immutable sequence_ of numbers commonly used for looping a specific number of times in `for` loops[[107]](https://en.wikipedia.org/wiki/Python_(programming_language)#cite_note-107)|`range(-1, 10)`  <br>`range(10, -5, -2)`|
-|`set`|mutable|Unordered [set](https://en.wikipedia.org/wiki/Set_(computer_science) "Set (computer science)"), contains no duplicates; can contain mixed types, if hashable|`{4.0, 'string', True`}  <br>`set()`|
+|`set`|mutable|Unordered [set](https://en.wikipedia.org/wiki/Set_(computer_science) "Set (computer science)"), contains no duplicates; can contain mixed types, if hashable|`{4.0, 'string', True}`  <br>`set()`|
 |`str`|immutable|A [character string](https://en.wikipedia.org/wiki/String_(computer_science) "String (computer science)"): sequence of Unicode codepoints|`'Wikipedia'`  <br>`"Wikipedia"`<br><br>"""Spanning<br>multiple<br>lines"""<br><br>Spanning<br>multiple<br>lines|
 |`tuple`|immutable|Can contain mixed types|`(4.0, 'string', True)`  <br>`('single element',)`  <br>`()`|
+
+**Functions**
+```python
+def hello(name):
+	print(f"Hello {name}!")
+
+hello('John Doe')
+```
+
+**Class**
+```python
+class Person:
+	def __init__(self, name, age):# Constractor
+		self.name = name
+		self.age = age
+```
+
+**Importing modules**
+```python
+import math
+import pandas as pd
+from datetime import date
+```
+
+**List vs Set**
+Set - duplicates are not allowed, will hold only unique values. Does not keep order in which elements were added.
