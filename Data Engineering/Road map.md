@@ -2,4 +2,4 @@
 
 Copyright © 2021 Alexandra Abbas — [hello@datastack.tv](mailto:hello@datastack.tv)
 
-![[roadmap.png]]
+![roadmap.png](img/roadmap.png)
