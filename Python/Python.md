@@ -3,7 +3,7 @@
 ## Basics
 **[Python](https://www.python.org/)** is a [high-level](https://en.wikipedia.org/wiki/High-level_programming_language "High-level programming language"), [general-purpose programming language](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language"), [dynamically typed](https://en.wikipedia.org/wiki/Type_system#DYNAMIC "Type system") and [garbage-collected](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)").
 
-**Python's statements include:**
+<details><summary>Python's statements</summary>
 
 - ```if elif else```
 - ```for```
@@ -36,8 +36,9 @@ while i < 10:
 - The `yield` statement, which returns a value from a [generator](https://en.wikipedia.org/wiki/Generator_(computer_programming)#Python "Generator (computer programming)") function (and also an operator); used to implement [coroutines](https://en.wikipedia.org/wiki/Coroutine "Coroutine")
 - The `return` statement, used to return a value from a function
 - The [import](https://en.wikipedia.org/wiki/Include_directive "Include directive") and `from` statements, used to import modules whose functions or variables can be used in the current program
+</details>
 
-**Python's expressions include:**
+<details><summary>Python's expressions</summary>
 - `+`, `-`, `*`, `/`
 - `//` integer division
 - `**` operator for exponentiation
@@ -50,8 +51,9 @@ while i < 10:
 - **Lists** are written as `[1, 2, 3]`
 - **Tuples**, written as `(1, 2, 3)`
 - **Dictionaries** are key-value pairs like: `{'key1': 1.0, 'key2': False, 2: 'text'}`
+</details>
 
-**Types**
+<details><summary>Types</summary>
 
 |Type|[Mutability](https://en.wikipedia.org/wiki/Immutable_object "Immutable object")|Description|Syntax examples|
 |---|---|---|---|
@@ -71,6 +73,7 @@ while i < 10:
 |`set`|mutable|Unordered [set](https://en.wikipedia.org/wiki/Set_(computer_science) "Set (computer science)"), contains no duplicates; can contain mixed types, if hashable|`{4.0, 'string', True}`  <br>`set()`|
 |`str`|immutable|A [character string](https://en.wikipedia.org/wiki/String_(computer_science) "String (computer science)"): sequence of Unicode codepoints|`'Wikipedia'`  <br>`"Wikipedia"`<br><br>"""Spanning<br>multiple<br>lines"""<br><br>Spanning<br>multiple<br>lines|
 |`tuple`|immutable|Can contain mixed types|`(4.0, 'string', True)`  <br>`('single element',)`  <br>`()`|
+</details>
 
 **Functions**
 ```python
@@ -96,4 +99,5 @@ from datetime import date
 ```
 
 **List vs Set**
+
 Set - duplicates are not allowed, will hold only unique values. Does not keep order in which elements were added.
