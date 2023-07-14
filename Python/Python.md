@@ -39,6 +39,7 @@ while i < 10:
 </details>
 
 <details><summary>Python's expressions</summary>
+
 - `+`, `-`, `*`, `/`
 - `//` integer division
 - `**` operator for exponentiation
@@ -130,3 +131,43 @@ print(now.strftime("%d %m %Y %H %M %S"))
 %B - full string month
 
 %b - short string month
+
+**Files**
+
+Basic:
+```python
+file = open("./some_file.ext", "w")
+file.write("some data")
+file.close()
+```
+Better way:
+```python
+import os.path
+
+name = "./some_file.ext"
+
+if os.path.isfile(name):
+	with open(name, "r") as file:
+		print(file.read())
+else:
+	print(f"File {name} does not exists")
+```
+Mode:
+
+w - write
+
+r - read
+
+r+ - read and write
+
+a - append
+
+Read file line by line:
+```python
+file = open("./some_file.ext", "r")
+#file.read()
+#file.readlines()
+for line in file:
+	print(line)
+file.close()
+```
