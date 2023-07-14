@@ -1,6 +1,6 @@
 # My notes on different technologies
-1. [[Getting Started With Data Engineering]]
-2. [[Data pipeline]]
-3. [[Docker]]
-4. [[Python]]
-5. [[SQL]]
+1. [Getting Started With Data Engineering](<Data Engineering/Getting Started With Data Engineering.md>)
+2. [Data pipeline](<Data pipelines/Data pipeline.md>)
+3. [Docker](Docker/Docker.md)
+4. [Python](Python/Python.md)
+5. [SQL](SQL/SQL.md)
