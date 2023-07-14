@@ -171,3 +171,28 @@ for line in file:
 	print(line)
 file.close()
 ```
+
+**Fetching Data From Internet**
+```python
+from urllib import request
+
+r = request.urlopen("http://www.google.com")
+print(r.getcode())
+print(r.read())
+```
+
+**Json**
+```python
+from urllib import request
+import json
+
+url = "some.api.url.that.returns.json"
+r = request.urlopen(url)
+jsonData = json.load(r.read())
+
+# Do something with data
+y = []
+for j in jsonData:
+	x = [j["key1"],j["key2"]]
+	y.append(x)
+```
