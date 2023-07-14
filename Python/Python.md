@@ -55,6 +55,14 @@ while i < 10:
 
 <details><summary>Types</summary>
 
+Python doe's not have `date` type, but we can import a module named `datetime` to work with dates as date objects.
+```python
+import datetime
+# or
+from datetime import datetime
+from datetime import date
+```
+
 |Type|[Mutability](https://en.wikipedia.org/wiki/Immutable_object "Immutable object")|Description|Syntax examples|
 |---|---|---|---|
 |`bool`|immutable|[Boolean value](https://en.wikipedia.org/wiki/Boolean_value "Boolean value")|`True`  <br>`False`|
@@ -90,6 +98,12 @@ class Person:
 		self.name = name
 		self.age = age
 ```
+**Override methods**
+```python
+class Person:
+	def __str__(self) -> str:    # -> str - declares method return type
+		return super().__str__() # super().__str__() - calling to_String from base class
+```
 
 **Importing modules**
 ```python
@@ -101,3 +115,18 @@ from datetime import date
 **List vs Set**
 
 Set - duplicates are not allowed, will hold only unique values. Does not keep order in which elements were added.
+
+**Date formatting**
+
+```python
+from datetime import datetime
+from datetime import date
+
+now = datetime.now()
+print(now.strftime("%d %m %Y %H %M %S"))
+```
+%m - two digit month
+
+%B - full string month
+
+%b - short string month
