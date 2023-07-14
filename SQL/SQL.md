@@ -1,1 +1,1 @@
-1. [[Indexes]]
+1. [Indexes](Indexes.md)
