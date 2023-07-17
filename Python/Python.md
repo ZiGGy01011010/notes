@@ -173,6 +173,8 @@ file.close()
 ```
 
 **Fetching Data From Internet**
+
+Basic:
 ```python
 from urllib import request
 
@@ -189,6 +191,31 @@ import json
 url = "some.api.url.that.returns.json"
 r = request.urlopen(url)
 jsonData = json.load(r.read())
+
+# Do something with data
+y = []
+for j in jsonData:
+	x = [j["key1"],j["key2"]]
+	y.append(x)
+```
+**PIP**
+
+PIP - python package manager
+```shell
+pip install requests
+pip install pandas
+```
+**Fetching Data From Internet**
+
+Better way:
+```python
+import requests
+import json
+
+url = "some.api.url.that.returns.json"
+r = request.get(url)
+print(r.status_code)
+jsonData = json.load(r.text)
 
 # Do something with data
 y = []
