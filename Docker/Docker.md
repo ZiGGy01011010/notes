@@ -1,1 +1,51 @@
 [Good docker beginners guide](https://www.youtube.com/watch?v=3c-iBn73dDE)
+
+- **Main docker commands**
+
+Show all docker images:
+```shell
+docker images
+```
+There is public ([Docker Hub](https://hub.docker.com/)) and private ([AWS ECR](https://aws.amazon.com/ecr/)) docker image repositories.
+
+Pull image from image repository (without starting container):
+```shell
+docker pull <image>:<tag>
+```
+**tag** - version of the image, not required, default `latest`.
+
+List of running containers:
+```shell
+docker ps
+```
+List of all containers:
+```shell
+docker ps -a
+```
+Start a container from image (and pulls image from repository if it missing locally):
+```shell
+docker run -p <host_port>:<container_port> -d <image>
+```
+`-d` - optional flag, detached mode, no accesses to container terminal.
+
+`--name` - specify name of the container
+
+[List of all flags.](https://docs.docker.com/engine/reference/commandline/run/)
+
+Start/spot containers (to get container_id use `docker ps`):
+```shell
+docker stop <container_id>
+docker start <container_id>
+```
+- **Debugging containers**
+
+Logs:
+```shell
+docker logs <container_id>
+docker logs <container_name>
+```
+Connect to terminal of running container:
+```shell
+docker exec -it <container_id or container_name> /bin/bash
+```
+Essentially we are starting bash from container.
