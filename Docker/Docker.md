@@ -22,7 +22,7 @@ List of all containers:
 ```shell
 docker ps -a
 ```
-Start a container from image (and pulls image from repository if it missing locally):
+Create a new container from an image (and pull image from repository if it missing locally):
 ```shell
 docker run -p <host_port>:<container_port> -d <image>
 ```
@@ -41,11 +41,28 @@ docker start <container_id>
 
 Logs:
 ```shell
-docker logs <container_id>
-docker logs <container_name>
+docker logs <container_id or container_name>
+```
+Show only latest logs:
+```shell
+docker logs <container_id or container_name> | tail
+```
+Stream logs:
+```shell
+docker logs <container_id or container_name> -f
 ```
 Connect to terminal of running container:
 ```shell
 docker exec -it <container_id or container_name> /bin/bash
 ```
 Essentially we are starting bash from container.
+
+Docker networks
+```shell
+docker network ls
+```
+Create network
+```shell
+docker network create <name>
+```
+In order to add container to network, add `--network <network name>` flag to your `docker run` command.
