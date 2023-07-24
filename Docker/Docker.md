@@ -14,6 +14,13 @@ docker pull <image>:<tag>
 ```
 **tag** - version of the image, not required, default `latest`.
 
+Delete an image:
+```shell
+docker rmi <container id>
+```
+> **Note**
+> If image is used by container (even stopped container) you have to delete container first.
+
 List of running containers:
 ```shell
 docker ps
@@ -37,6 +44,11 @@ Start/spot containers (to get container_id use `docker ps`):
 docker stop <container_id>
 docker start <container_id>
 ```
+Delete the container:
+```shell
+docker rm <container_id>
+```
+
 - **Debugging containers**
 
 Logs:
@@ -56,6 +68,8 @@ Connect to terminal of running container:
 docker exec -it <container_id or container_name> /bin/bash
 ```
 Essentially we are starting bash from container.
+> **Note**
+> Some containers do not have bash installed, use `/bin/sh` instead.
 
 Docker networks
 ```shell
@@ -66,3 +80,11 @@ Create network
 docker network create <name>
 ```
 In order to add container to network, add `--network <network name>` flag to your `docker run` command.
+- **Dockerfile**
+
+[Dockerfile](Docker/Dockerfile) - blueprint for building images. It is always called Dockerfile (with capital D, without extension).
+
+Build image from Dockerfile
+```shell
+docker build -t <image name>:<tag> <path to file without filename>
+```
