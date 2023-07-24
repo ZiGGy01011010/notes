@@ -19,6 +19,7 @@ Delete an image:
 docker rmi <container id>
 ```
 > **Note**
+> 
 > If image is used by container (even stopped container) you have to delete container first.
 
 List of running containers:
@@ -69,6 +70,7 @@ docker exec -it <container_id or container_name> /bin/bash
 ```
 Essentially we are starting bash from container.
 > **Note**
+> 
 > Some containers do not have bash installed, use `/bin/sh` instead.
 
 Docker networks
