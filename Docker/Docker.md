@@ -123,5 +123,6 @@ services:
     volumes:
       - mongo-data:/data/db
 volumes:
-  mongo-data
+  mongo-data:
+    driver: local
 ```
