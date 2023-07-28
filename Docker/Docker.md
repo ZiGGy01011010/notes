@@ -90,3 +90,38 @@ Build image from Dockerfile
 ```shell
 docker build -t <image name>:<tag> <path to file without filename>
 ```
+- **Volumes**
+
+Volume - mechanism for storing containers data.
+
+1. Host volumes
+```shell
+docker run <other flags> -v <host directory>:<container directory>
+```
+Binds directory from host to directory in container.
+
+2. Anonymous volumes
+```shell
+docker run <other flags> -v <container directory>
+```
+Docker puts this volume somewhere in `/docker/volumes/`.
+
+3. Named volumes
+```shell
+docker run <other flags> -v <name>:<container directory>
+```
+Also managed by docker, can be referenced by `name`.
+
+Example `docker-compose.yaml`:
+```yaml
+version: '3'
+services:
+  mongodb:
+    .
+    .
+    .
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data
+```
