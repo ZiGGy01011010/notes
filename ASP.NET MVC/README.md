@@ -11,7 +11,15 @@
 **Router** - selects the right controller to handle request
 
 ---
-`/App_Start/RouteConfig.cs` - default routing
+`/App_Start/RouteConfig.cs` - default routing. Order of routs matters. From most *specific* to most *generic*.
+```csharp
+routes.MapRoute(
+    name: "default",
+    url: "{controller}/{action}/{id}",
+    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional},
+    constraints: new { id = @"\d{4}"}//Regex for id parameter
+);
+```
 
 `/Views/` - by convention has subfolders with the same name as the controller (without controller word) to store its views.
 

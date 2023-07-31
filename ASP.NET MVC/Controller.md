@@ -5,9 +5,11 @@
 | PartialViewResult | PartialView() |
 | ContentResult | Content() | Represents a text result. |
 | RedirectResult | Redirect() | Represents a redirection to a new URL. |
-| RedirectToRouteResult | RedirectToAction() |
+| RedirectToRouteResult | RedirectToAction() | Represents a redirect to a controller action in an application. |
 | JsonResult | Json() | Represents a JavaScript Object Notation result. |
-| JavaScriptResult |  | Represents a JavaScript script. |
+| JavaScriptResult | JavaScriptResult() | Represents a JavaScript script. |
 | FileResult | File() | Represents a downloadable file. |
-| HttpNotFoundResult | HttpNotFound()|
+| HttpNotFoundResult | HttpNotFound() | Represents 404 error. |
 | EmptyResult |  | Represents no result. |
+## Action parameters
+To make parameter **optional** you should make it **nullable**.
