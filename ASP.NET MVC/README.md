@@ -35,3 +35,4 @@ Basic [model](PersonModel.cs), [view](Index.cshtml), [controller](TestHomeContro
 `/App_Start/BundleConfig.cs` - configures bundles of ccs and/or js files for web optimization.
 
 1. [Controller](Controller.md)
+2. [Razor View](RazorView.md)
