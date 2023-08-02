@@ -17,6 +17,8 @@ Comments:
     /* C# comment */
     // Another C# comment
 }
+@* This is a comment
+*@
 <!-- HTML comment -->
 ```
 Expressions:
@@ -35,11 +37,22 @@ Expressions:
 <!-- Generic methods should be an explicit expression (), otherwise brackets <> are interpreted as an HTML tag. -->
 <p>@(GenericMethod<int>())</p>
 ```
-For loop:
+Loops:
 ```cshtml
 @for (var i = 0; i < people.Length; i++)
 {
     var person = people[i];
     <text>Name: @person.Name</text>
 }
+@foreach (var customer in Model.customers)
+{
+    <p>@customer.name</p>
+}
+```
+Render attributes dynamically:
+```cshtml
+@{
+    var className = Model.Customers.Count > 5 ? "popular" : null;
+}
+<h2 class = "@className">@Model.Movie.Name</h2>
 ```
