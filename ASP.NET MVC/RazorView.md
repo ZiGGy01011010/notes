@@ -1,4 +1,4 @@
-**Razor** is a markup syntax for embedding **.NET** based code into webpages. The Razor syntax consists of Razor markup, C#, and HTML.
+**[Razor](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/razor)** is a markup syntax for embedding **.NET** based code into webpages. The Razor syntax consists of Razor markup, C#, and HTML.
 
 Model type:
 ```cshtml
@@ -37,6 +37,21 @@ Expressions:
 <!-- Generic methods should be an explicit expression (), otherwise brackets <> are interpreted as an HTML tag. -->
 <p>@(GenericMethod<int>())</p>
 ```
+Conditions:
+```cshtml
+@if (value % 2 == 0)
+{
+    <p>The value was even.</p>
+}
+else if (value >= 1337)
+{
+    <p>The value is large.</p>
+}
+else
+{
+    <p>The value is odd and small.</p>
+}
+```
 Loops:
 ```cshtml
 @for (var i = 0; i < people.Length; i++)
@@ -48,6 +63,11 @@ Loops:
 {
     <p>@customer.name</p>
 }
+@while ...
+@do
+{
+    ...
+} while (...);
 ```
 Render attributes dynamically:
 ```cshtml
@@ -55,4 +75,41 @@ Render attributes dynamically:
     var className = Model.Customers.Count > 5 ? "popular" : null;
 }
 <h2 class = "@className">@Model.Movie.Name</h2>
+@* class attribute will not render if = null *@
+```
+using:
+```cshtml
+@using (Html.BeginForm())
+{
+    <div>
+        Email: <input type="email" id="Email" value="">
+        <button>Register</button>
+    </div>
+}
+```
+try, catch, finally:
+```cshtml
+@try
+{
+    throw new InvalidOperationException("You did something invalid.");
+}
+catch (Exception ex)
+{
+    <p>The exception message: @ex.Message</p>
+}
+finally
+{
+    <p>The finally statement.</p>
+}
+```
+lock:
+```cshtml
+@lock (SomeLock)
+{
+    // Do critical section work
+}
+```
+Attribute:
+```cshtml
+@attribute [Authorize]
 ```
