@@ -36,3 +36,4 @@ Basic [model](PersonModel.cs), [view](Index.cshtml), [controller](TestHomeContro
 
 1. [Controller](Controller.md)
 2. [Razor View](RazorView.md)
+3. [Partial view](PartialView.md)
