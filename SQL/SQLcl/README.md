@@ -10,26 +10,26 @@ Connect to database:
 ```
 Generates changelogs for database objects:
 ```bat
-SQL> lb genobject -type table -name zipcodes
-SQL> lb genobject -type ords -name module
+SQL> lb generate-object -object-type table -object-name zipcodes
+SQL> lb generate-object -object-type ords -object-name module
 ```
 Generates changelogs and controller file for schema:
 ```bat
-SQL> lb genschema
+SQL> lb generate-schema -split
 ```
 Applies the specified changelog to schema:
 ```bat
 SQL> lb update -changelog controller.xml
 ```
-Writes SQL to roll back the database to the requested state:
-```bat
-SQL> lb rollbacksql -changelog controller.xml -count 100
-```
 Creates multiple folders/files per component and install file:
 ```bat
-SQL> lb genobject -type apex -application 101 -skipExportDate -expOriginalIds -split
+SQL> lb generate-apex-object -applicationid 101 -split
 ```
 Export the data from the indicated tables (only use for small metadata tables):
 ```bat
-SQL> lb data - object TABLE_NAME1,TABLE_NAME2
+SQL> lb data -object TABLE_NAME1,TABLE_NAME2
+```
+Writes SQL to roll back the database to the requested state:
+```bat
+SQL> lb rollbacksql -changelog controller.xml -count 100
 ```
