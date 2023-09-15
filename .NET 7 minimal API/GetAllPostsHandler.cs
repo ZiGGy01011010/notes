@@ -2,7 +2,7 @@ using MediatR;
 using Domain.Models;
 using Application.Posts.Queries;
 
-namespace Application.Posts.QueryHandlers
+namespace Application.Posts.QueryHandlers;
 
 public class GetAllPostsHandler : IRequestHandler<GetAllPosts, ICollection<Post>>
 {

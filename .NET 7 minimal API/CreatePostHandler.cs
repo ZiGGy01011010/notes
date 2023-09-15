@@ -2,7 +2,7 @@ using MediatR;
 using Domain.Models;
 using Application.Posts.Commands;
 
-namespace Application.Posts.CommandHandlers
+namespace Application.Posts.CommandHandlers;
 
 public class CreatePostHandler : IRequestHandler<CreatePost, Post>
 {
