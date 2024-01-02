@@ -12,11 +12,11 @@ Principles **KISS**, **DRY**, **SOLID** (
 &nbsp;&nbsp;Dependency inversion principle  
 &nbsp;&nbsp;),  
 **Design patterns** (singleton, Abstract Factory...),  
-**Clean architecture** solution (Domain layer, Application layer, DataAccess/Infrastructure layer),  
-**IoC Container** (a.k.a. DI Container),  
+**Clean architecture** solution (Domain layer, Application/Business layer, Infrastructure/DataAccess layer, Presentation/WebAPI layer),  
 **DDD** (Rich domain model, entities related business rules, Aggregates, Entities, Value Objects, Domain events, Domain errors),  
 **TDD** (All class dependencies should be exposed through interfaces, for mocking.  
 &nbsp;&nbsp;Use xUnit/NUnit, don't use Moq!!! Use NSubstitute instead, fluent assertions),  
+**IoC Container** (a.k.a. DI Container),  
 **ORM** (Entity Framework and/or Dapper),  
 **CQRS** pattern and it's implementation MediatR,  
 **mapping** Model <=> DTO (don't use AutoMapper!!! Use Mapperly or manually write extension method for DTO class),  

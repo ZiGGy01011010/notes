@@ -8,3 +8,4 @@
 7. [SQLcl and Liquibase](SQL/SQLcl/README.md)
 8. [.NET 7 minimal API](<C# & .NET/.NET 7 minimal API/README.md>)
 9. [CSS](CSS/README.md)
+10. [Clean architecture](<C# & .NET/Clean architecture/README.md>)
