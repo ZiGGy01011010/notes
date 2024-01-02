@@ -1,6 +1,6 @@
 ## What is SQLcl?
 **[SQLcl](https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-latest.zip)** - is Java-based command-line tool for Oracle Database. Successor of SQL*Plus basically. [Docs](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/index.html).
-## WHat is Liquibase?
+## What is Liquibase?
 **Liquibase** is an [open-source](https://github.com/liquibase/liquibase) database-independent library for tracking, managing and applying database schema changes.
 ## Examples
 Connect to database:
