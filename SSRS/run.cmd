@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\rs.exe" -u debt_tech -p Fisher1808!>Iqusion -i C:\SSRS\Upload_Multiple_RDL_files.rss -s "http://debt-app-dev.mof.local/reportserver" -v FILE_NAME="C:\SSRS\Configuration.txt"
