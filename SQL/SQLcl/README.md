@@ -31,5 +31,5 @@ SQL> lb data -object TABLE_NAME1,TABLE_NAME2
 ```
 Writes SQL to roll back the database to the requested state:
 ```bat
-SQL> lb rollbacksql -changelog controller.xml -count 100
+SQL> lb rollback-sql -changelog controller.xml -count 100
 ```
